@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<title>Transtate</title>
+</head>
+<body>
+	<div class="mb-5 container-fluid border-bottom">
+		<div class="m-3 d-flex">
+			<div class="d-flex">
+				<i class="fas fa-bars pt-1"></i>
+			</div class="d-flex align-items-center">
+			<div >
+				<p class="font-weight-normal h5 pl-3">
+					<span class="text-primary">G</span><span class="text-danger">o</span><span class="text-warning">o</span><span class="text-primary">g</span><span class="text-success">l</span><span class="text-danger">e</span>
+					<span>Translate</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<dir class="card p-0 shadow-sm">
+			<div class="border-bottom p-0 d-flex">
+				<div class="col-6">
+					<div class="py-2 px-3 m-0 d-inline-block text-primary border-bottom border-primary h5">
+						ENGLISH
+					</div>
+				</div>
+					<i class=" material-icons" style="position: relative;right: 11px;top:10px;">swap_horiz</i>
+				<div class="">
+					<div class="py-2 px-3 m-0 d-inline-block text-primary border-bottom border-primary h5">
+						VIETNAMESE
+					</div>
+				</div>
+			</div>
+			<div class="d-flex" style="height: ">
+				<div class="w-50 border-right p-3">
+					<div>
+						<form class="">
+							<textarea class="form-control border-0" style="resize: none;" id="input"></textarea>
+						</form>
+					</div>
+					<div class="pt-4 float-right" style="color: #ddd">
+						<span>0</span><span>/5000</span> <span class="pl-3" style="position:relative;top:7px;"><i class="material-icons">keyboard</i> <i class="material-icons ">keyboard_arrow_down</i></span>
+					</div>
+				</div>
+				<div class="w-50 p-3">
+					<div>
+						<form class="">
+							<textarea class="form-control border-0" style="resize: none;" id="result"></textarea>
+						</form>
+					</div>
+				</div>
+			</div>
+		</dir>
+	</div>
+	<div class="container d-flex justify-content-center text-center" style="color: #888">
+		<div class="py-5 px-3">
+			<div class="d-flex border rounded-circle align-items-center justify-content-center" style="width: 72px;height:72px"><i class="material-icons">history</i></div>
+			<div>History</div>
+		</div>
+		<div class="py-5 px-3">
+			<div class="d-flex border rounded-circle align-items-center justify-content-center" style="width: 72px;height:72px"><i class="material-icons">grade</i></div>
+			<div>Saved</div>
+		</div>
+		<div class="py-5 px-3">
+			<div class="d-flex border rounded-circle align-items-center justify-content-center" style="width: 72px;height:72px"><i class="material-icons">people</i></div>
+			<div>Community</div>
+		</div>
+	</div>	
+
+	
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#input').keyup(function () {
+				$('#result').val($('#input').val());
+			});
+			
+		});
+	</script>
+
+</body>
+</html>
